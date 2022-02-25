@@ -108,7 +108,7 @@ public class Client extends JFrame {
 		
 		messageArea.setEditable(false);
 		messageInput.setHorizontalAlignment(SwingConstants.CENTER);
-		//frame ka Layout set karenge
+		// adding Layout to Frame
 		this.setLayout(new BorderLayout());
 		 
 		//adding the components to frame
@@ -120,7 +120,6 @@ public class Client extends JFrame {
 	 
 	public void startReading()
 	{
-		//thread-read karke deta rahega
 		
 		Runnable r1=()->{
 			
@@ -155,7 +154,7 @@ public class Client extends JFrame {
 	
 	public void startWriting()
 	{
-		//thread - data user lega and the send karega client tak
+		
 		Runnable r2=()->{
 			System.out.println("Writer started..");
 			try {
