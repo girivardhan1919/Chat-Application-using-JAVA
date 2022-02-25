@@ -33,17 +33,17 @@ public class Client extends JFrame {
 	public Client()
 	{
 		try {
-//			System.out.println("Sending request to Server..");
-//			socket = new Socket("127.0.0.1",7778);
-//			System.out.println("Connection done.");
-//			
-//			br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
-//			
-//			out= new PrintWriter(socket.getOutputStream());
+			System.out.println("Sending request to Server..");
+			socket = new Socket("127.0.0.1",7778);
+			System.out.println("Connection done.");
+			
+			br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			
+			out= new PrintWriter(socket.getOutputStream());
 			
 			createGUI();
 			handleEvents();
-			//startReading();
+			startReading();
 			//startWriting();
 			
 		} catch(Exception e)
