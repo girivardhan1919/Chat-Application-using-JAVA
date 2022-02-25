@@ -37,7 +37,6 @@ class Server
 	
 	public void startReading()
 	{
-		//thread-read karke deta rahega
 		
 		Runnable r1=()->{
 			
@@ -69,7 +68,7 @@ class Server
 	
 	public void startWriting()
 	{
-		//thread - data user lega and the send karega client tak
+		
 		Runnable r2=()->{
 			System.out.println("Writer started..");
 			try {
